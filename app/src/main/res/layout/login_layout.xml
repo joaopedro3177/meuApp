@@ -19,7 +19,6 @@
         />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -29,6 +28,7 @@
         app:startIconDrawable="@drawable/baseline_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -37,7 +37,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtSenha"
+
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -46,11 +47,15 @@
         app:endIconMode="password_toggle"
         app:startIconDrawable="@drawable/baseline_lock_24">
 
+
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:maxLength="20" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
         <TextView
@@ -72,7 +77,9 @@
             android:text="Entrar"
             android:textAllCaps="true"
             android:textSize="16sp"
-            app:cornerRadius="15dp" />
+            app:cornerRadius="15dp" >
+
+        </com.google.android.material.button.MaterialButton>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCadastro"
@@ -84,9 +91,11 @@
             android:text="Cadastro"
             android:textAllCaps="true"
             android:textSize="16sp"
-            app:cornerRadius="15dp" />
+            app:cornerRadius="15dp" >
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.button.MaterialButton>
+
+
 
 
 </LinearLayout>
